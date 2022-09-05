@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title></title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="mailto:garantmetall@list.ru" class="header__email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
+                        <path d="M1.3057 1.44299H15.6684C15.8821 1.44299 16.087 1.52788 16.2381 1.67898L16.5917 1.32542L16.2381 1.67898C16.3892 1.83008 16.4741 2.03501 16.4741 2.24869V2.50855L8.48705 7.42366L0.5 2.50855V2.24869C0.5 2.03501 0.584886 1.83008 0.735984 1.67898C0.887082 1.52788 1.09202 1.44299 1.3057 1.44299Z" stroke="#E67025"/>
+                        <path d="M8.225 9.96955L8.48705 10.1308L8.7491 9.96955L16.4741 5.21571V12.6944C16.4741 12.9081 16.3892 13.113 16.2381 13.2641C16.087 13.4152 15.8821 13.5001 15.6684 13.5001H1.3057C1.09202 13.5001 0.887082 13.4152 0.735984 13.2641C0.584886 13.113 0.5 12.9081 0.5 12.6944V5.21571L8.225 9.96955Z" stroke="#E67025"/>
+                    </svg>
+                    garantmetall@list.ru
+                </a>
+                <button class="header__phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.43288 1.27426L6.71285 4.4728C7.01285 4.85662 6.95285 5.36839 6.71285 5.68824L5.15287 7.35148C4.43288 8.05516 9.35282 13.3008 10.0128 12.5971L11.5728 10.9338C11.8728 10.614 12.4128 10.614 12.7128 10.8699L15.7127 13.3008C16.0727 13.6206 16.0727 14.0684 15.8327 14.3883L14.1528 16.1795L13.9728 16.3714C11.8728 18.5464 6.59285 14.5162 4.97287 12.789C3.35289 10.9978 -0.487057 5.36839 1.61292 3.12941L1.79291 3.00147L3.41289 1.21029C3.71289 0.890434 4.19288 0.954405 4.43288 1.27426Z" stroke="#E67025"/>
+                    </svg>
+                    <p>+7 846 243 43 22</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M5 3.81846L8.88906 0L10 1.09077L5 6L0 1.09077L1.11094 0L5 3.81846Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="header__bottom">
+                <a href="" class="header__logo">
+                    <div class="img">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+                    <p class="text">ГАРАНТМЕТАЛЛ</p>
+                </a>
+                <div class="header__navbar">
+                    <ul class="ul">
+                        <li class="li">
+                            <a href="#" class="item">О компании</a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="item">Каталог</a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="item">Новости</a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="item">СТАТЬИ</a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="item">Документы</a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="item">Доставка</a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="item">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="header__cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23" fill="none">
+                        <path d="M17.5007 20.6086C17.5007 21.6807 16.6612 22.5498 15.6257 22.5498C14.5902 22.5498 13.7507 21.6807 13.7507 20.6086C13.7507 19.5366 14.5902 18.6675 15.6257 18.6675C16.6612 18.6675 17.5007 19.5366 17.5007 20.6086Z" fill="white"/>
+                        <path d="M5.62537 22.5498C6.6609 22.5498 7.50037 21.6807 7.50037 20.6086C7.50037 19.5366 6.6609 18.6675 5.62537 18.6675C4.58983 18.6675 3.75037 19.5366 3.75037 20.6086C3.75037 21.6807 4.58983 22.5498 5.62537 22.5498Z" fill="white"/>
+                        <path d="M1.25 0.549805C0.55965 0.549805 0 1.1292 0 1.84391C0 2.55862 0.55965 3.13802 1.25 3.13802H2.77402L3.15597 4.71973C3.15999 4.73801 3.16437 4.75615 3.16912 4.77414L4.86566 11.7997L3.74994 12.9548C2.17502 14.5853 3.29044 17.3732 5.5177 17.3732H16.25C16.9402 17.3732 17.5 16.7938 17.5 16.0791C17.5 15.3643 16.9402 14.785 16.25 14.785H5.51771L6.7677 13.4909H15C15.4735 13.4909 15.9062 13.2139 16.118 12.7755L19.868 5.01086C20.0617 4.60971 20.0411 4.1333 19.8134 3.75177C19.5855 3.37024 19.1832 3.13802 18.75 3.13802H5.35097L4.96267 1.53004C4.82356 0.953954 4.32359 0.549805 3.75 0.549805H1.25Z" fill="white"/>
+                    </svg>
+                    <div class="amount">1</div>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="product">
+            <div class="container">
+                <div class="crumbs">
+                    <a href="#">Главная</a>
+                    <span></span>
+                    <a href="#">Каталог</a>
+                    <span></span>
+                    <a href="#">Категория каталога</a>
+                    <span></span>
+                    <p>Карточка товара</p>
+                </div>
+                <div class="product__box">
+                    <div class="product__images">
+                        <div class="nav_img_slider">
+                            <div class="wrap">
+                                <div class="img">
+                                    <img src="img/product-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <div class="img">
+                                    <img src="img/product-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <div class="img">
+                                    <img src="img/product-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <div class="img">
+                                    <img src="img/product-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <div class="img">
+                                    <img src="img/product-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="images_slider">
+                            <div class="wrap">
+                                <div class="img">
+                                    <img src="img/product-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <div class="img">
+                                    <img src="img/product-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <div class="img">
+                                    <img src="img/product-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <div class="img">
+                                    <img src="img/product-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <div class="img">
+                                    <img src="img/product-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__right">
+                        <p class="title">Лист 0,5х1250х2500 ст.08Х18Н10</p>
+                        <p class="price">
+                            1000 <span>руб.</span>
+                        </p>
+                        <div class="box">
+                            <div class="number">
+                                <button class="minus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" viewBox="0 0 10 2" fill="none">
+                                        <path d="M9 1H1H9Z" fill="#9D9D9D"/>
+                                        <path d="M9 1H1" stroke="#9D9D9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+                                    </svg>
+                                </button>
+                                <input type="text" class="input" value="0" readonly>
+                                <button class="plus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                        <path d="M6 6.99984H1H6Z" fill="#9D9D9D"/>
+                                        <path d="M6 1.7915V6.99984M6 6.99984V12.2082M6 6.99984H11M6 6.99984H1" stroke="#9D9D9D" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button class="btn"><span>В корзину</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="126" height="50" viewBox="0 0 126 50" fill="none">
+                                    <path d="M0.5 0.5H119.598L124.988 25L119.598 49.5H0.5V0.5Z" stroke="#E67025"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__description">
+                    <div class="tab_btn">
+                        <button class="btn" id="tab-btn1">Описание</button>
+                        <button class="btn active" id="tab-btn2">Характеристики</button>
+                    </div>
+                    <div class="tab_block" id="tab-block1">
+                        <p class="title">Описание</p>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, obcaecati commodi ea accusamus dolores ad facilis. Delectus ab sed neque natus ut ex consequuntur quo voluptatum a quis nam nemo laudantium ducimus rerum, eos cupiditate eveniet provident aliquid molestias. Magnam maiores officiis neque autem amet, temporibus ratione nemo corrupti nobis quidem ipsum porro fuga quas ducimus id sapiente vero praesentium reiciendis, aliquam illo delectus. Itaque consequatur aperiam eum dolorum temporibus nam corrupti quibusdam voluptatum! Fugiat iusto nisi cumque rem delectus. Omnis suscipit ad assumenda distinctio obcaecati ipsa corporis sint exercitationem incidunt excepturi tempore expedita, a fugiat, consequatur dolorem inventore molestiae?</p>
+                    </div>
+                    <div class="tab_block active" id="tab-block2">
+                        <p class="title">Характеристика</p>
+                        <ul class="ul">
+                            <li class="li">
+                                <p class="left">
+                                    <span>Характеристика</span>
+                                </p>
+                                <p class="right">
+                                    <span>Данные</span>
+                                </p>
+                            </li>
+                            <li class="li">
+                                <p class="left">
+                                    <span>Характеристика</span>
+                                </p>
+                                <p class="right">
+                                    <span>Данные</span>
+                                </p>
+                            </li>
+                            <li class="li">
+                                <p class="left">
+                                    <span>Характеристика</span>
+                                </p>
+                                <p class="right">
+                                    <span>Данные</span>
+                                </p>
+                            </li>
+                            <li class="li">
+                                <p class="left">
+                                    <span>Характеристика</span>
+                                </p>
+                                <p class="right">
+                                    <span>Данные</span>
+                                </p>
+                            </li>
+                            <li class="li">
+                                <p class="left">
+                                    <span>Характеристика</span>
+                                </p>
+                                <p class="right">
+                                    <span>Данные</span>
+                                </p>
+                            </li>
+                            <li class="li">
+                                <p class="left">
+                                    <span>Характеристика</span>
+                                </p>
+                                <p class="right">
+                                    <span>Данные</span>
+                                </p>
+                            </li>
+                            <li class="li">
+                                <p class="left">
+                                    <span>Характеристика</span>
+                                </p>
+                                <p class="right">
+                                    <span>Данные</span>
+                                </p>
+                            </li>
+                            <li class="li">
+                                <p class="left">
+                                    <span>Характеристика</span>
+                                </p>
+                                <p class="right">
+                                    <span>Данные</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <a href="#" class="footer__logo">
+                    <div class="img">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+                    <p class="text">ГАРАНТМЕТАЛЛ</p>
+                </a>
+                <div class="footer__map">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="19" viewBox="0 0 14 19" fill="none">
+                            <path d="M7 18C7 18 1 10.2395 1 6.95C1 3.6639 3.68629 1 7 1C10.3137 1 13 3.6639 13 6.95C13 10.2395 7 18 7 18ZM7 8.65C7.94714 8.65 8.71429 7.88925 8.71429 6.95C8.71429 6.01075 7.94714 5.25 7 5.25C6.05286 5.25 5.28571 6.01075 5.28571 6.95C5.28571 7.88925 6.05286 8.65 7 8.65Z" stroke="#E67025"/>
+                        </svg>
+                    </div>
+                    <p class="text">443028, Россия, г.Самара, ул. Бульвар Ивана Финютина, дом. 22</p>
+                </div>
+                <div class="footer__email">
+                    <a href="#" class="link">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                                <path d="M14.8462 1.32619H2.15385C1.84783 1.32619 1.55434 1.44776 1.33795 1.66414C1.12157 1.88053 1 2.17402 1 2.48004V2.95658L8.5 7.57196L16 2.95658V2.48004C16 2.17402 15.8784 1.88053 15.662 1.66414C15.4457 1.44776 15.1522 1.32619 14.8462 1.32619Z" stroke="#E67025"/>
+                                <path d="M1 5.32629V12.7259C1 13.0319 1.12157 13.3254 1.33795 13.5418C1.55434 13.7582 1.84783 13.8798 2.15385 13.8798H14.8462C15.1522 13.8798 15.4457 13.7582 15.662 13.5418C15.8784 13.3254 16 13.0319 16 12.7259V5.32629L8.5 9.94168L1 5.32629Z" stroke="#E67025"/>
+                            </svg>
+                        </div>
+                        garantmetall@list.ru
+                    </a>
+                </div>
+                <div class="footer__phone">
+                    <div class="link">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.57058 1.25723L6.85055 4.25719C7.15054 4.61719 7.09054 5.09718 6.85055 5.39718L5.29057 6.95716C4.57058 7.61715 9.49051 12.5371 10.1505 11.8771L11.7105 10.3171C12.0105 10.0171 12.5505 10.0171 12.8505 10.2571L15.8504 12.5371C16.2104 12.8371 16.2104 13.2571 15.9704 13.5571L14.2905 15.2371L14.1105 15.4171C12.0105 17.457 6.73055 13.6771 5.11057 12.0571C3.49059 10.3771 -0.349362 5.09718 1.75061 2.99721L1.93061 2.87721L3.55059 1.19723C3.85058 0.897237 4.33058 0.957236 4.57058 1.25723Z" stroke="#E67025"/>
+                            </svg>
+                        </div>
+                        <p>+7 846 243 43 22</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">
+                            <path d="M5.13769 3.81858L9.02676 0.00012207L10.1377 1.09089L5.13769 6.00012L0.137695 1.09089L1.24863 0.00012207L5.13769 3.81858Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="left">
+                    <p class="copy">
+                        © 2022 garantmetall63.ru
+                        <span>Политика конфиденциальности</span>
+                    </p>
+                    <div class="text">
+                        <a href="#">garantmetall@list.ru</a> — электронная почта для обращений с вопросом о своих персональных данных, в том числе об их удалении.
+                    </div>
+                </div>
+                <div class="right">
+                    <div>
+                        <a href="#" class="link">Создание сайтов</a>
+                        <a href="#" class="link">Продвижение сайтов</a>
+                    </div>
+                    <img src="img/logo-kontur.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $('.images_slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            asNavFor: '.nav_img_slider',
+            dots: false,
+            arrows: false
+        });
+        $('.nav_img_slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.images_slider',
+            dots: true,
+            focusOnSelect: true,
+            vertical: true,
+            verticalSwiping: true,
+            dots: false,
+            arrows: true,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    vertical: false,
+                    verticalSwiping: false,
+                    arrows: false,
+                }
+                }
+            ]
+        });
+    </script>
+</body>
+</html>
