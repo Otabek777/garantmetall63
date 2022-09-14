@@ -633,6 +633,7 @@ ul, ol {
   height: 145px;
   background: url(../img/textarea-bg.svg) no-repeat left;
   margin-bottom: 40px;
+  position: relative;
 }
 .form_call__left .textarea textarea {
   width: 100%;
@@ -647,7 +648,7 @@ ul, ol {
   font-size: 18px;
   line-height: 21px;
   padding: 16px 22px;
-  border-radius: 0 0 10px 0;
+  position: relative;
 }
 .form_call__left .textarea textarea::-webkit-input-placeholder {
   color: #93949B;
@@ -663,6 +664,15 @@ ul, ol {
 }
 .form_call__left .textarea textarea::placeholder {
   color: #93949B;
+}
+.form_call__left .textarea::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #1B1D2D;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .form_call__left .btn {
   width: 100%;
