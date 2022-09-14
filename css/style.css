@@ -647,6 +647,7 @@ ul, ol {
   font-size: 18px;
   line-height: 21px;
   padding: 16px 22px;
+  border-radius: 0 0 10px 0;
 }
 .form_call__left .textarea textarea::-webkit-input-placeholder {
   color: #93949B;
