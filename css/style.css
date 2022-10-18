@@ -546,7 +546,8 @@ ul, ol {
   position: absolute;
   left: 22px;
   top: -17px;
-  background: #E67025;
+  background: url(../img/date-bg.svg) no-repeat left center;
+  background-size: 100%;
   padding: 7px 20px 7px 19px;
   font-weight: 400;
   font-size: 16px;
